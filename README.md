@@ -35,3 +35,6 @@ Flips can be thought of in a very similar way. Each element we sort can take 0, 
 
 This makes sense as we'd expect asymptotic runtime to be the same for any algorithm no matter which way you choose to evaluate it.
 
+I did some research on pancake sort prior to starting my code to understand how it works which is where I got the idea of flipping the largest element to the front and then flipping it into its sorted position. Initial code written by me, proofread by chatgpt but no major changes made.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
