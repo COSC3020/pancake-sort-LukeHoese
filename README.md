@@ -31,9 +31,7 @@ answer to this markdown file.
 
 The outer loop runs n-1 times, which is an element of $\Theta$(n). The inner loop makes j comparisons each pass, where j is the size of the unsorted array, so j = n - 1 for the first pass, j = n - 2 for the second pass. Thus we can think of the amount of work done by the inner loop as an element of $\Theta$(n). Multiplying these two gives us a total time complexity of $\Theta$(n<sup>2</sup>).
 
-Flips can be thought of in a very similar way. Each element we sort can take 0, 1, or 2 flips depending on its position. Doing this for every element gives us an asymptotic complexity for number of flips of $\Theta$(n), linear to number of elements. Within each flip we return to our trusty j, with j being the number of unsorted elements, n for first pass, n-1 for second pass, once again simplifying to $\Theta$(n). Multiplying these two once again gives us $\Theta$(n<sup>2</sup>)
-
-This makes sense as we'd expect asymptotic runtime to be the same for any algorithm no matter which way you choose to evaluate it.
+Flips can be thought of in a very similar way. Each element we sort can take 0, 1, or 2 flips depending on its position. Doing this for every element gives us an asymptotic complexity for number of flips of $\Theta$(n), linear to number of elements.
 
 I did some research on pancake sort prior to starting my code to understand how it works which is where I got the idea of flipping the largest element to the front and then flipping it into its sorted position. Initial code written by me, proofread by chatgpt but no major changes made.
 
