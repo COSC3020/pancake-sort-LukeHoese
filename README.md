@@ -29,7 +29,7 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
-The outer loop runs n-1 times, which is an element of $\Theta$(n). The inner loop makes j comparisons each pass, where j is the size of the unsorted array, so j = n - 1 for the first pass, j = n - 2 for the second pass. Thus we can think of the amount of work done by the inner loop as an element of $\Theta$(n). Multiplying these two gives us a total time complexity of $\Theta$(n<sup>2</sup>).
+The outer loop runs n-1 times, which is an element of $\Theta$(n). The inner loop makes j comparisons each pass, where j is the size of the unsorted array, so j = n - 1 for the first pass, j = n - 2 for the second pass. Thus we can think of the amount of work done by the inner loop as an element of $\Theta$(n). Multiplying these two gives us a total time complexity of $\Theta$(n<sup>2</sup>) comparisons.
 
 Flips can be thought of in a very similar way. Each element we sort can take 0, 1, or 2 flips depending on its position. Doing this for every element gives us an asymptotic complexity for number of flips of $\Theta$(n), linear to number of elements. Not every comparison results in a flip. If an element is already in its correct position no flips are performed. If the largest non sorted element is already at the front of the array, one flip is performed. If the element is somewhere in the middle, two flips are performed. For every element (every iteration of the outer loop) we perform a max of two flips, meaning that asymptotic analysis of the number of flips would have it linear to the number of elements (n).
 
